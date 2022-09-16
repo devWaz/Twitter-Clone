@@ -1,13 +1,13 @@
 import "./sidebar.css";
 import TwitterIcon from '@mui/icons-material/Twitter';
-import SidebarMenu from "../sidebarMenu/sidebarMenu.js";
+import SidebarMenu from "../sidebarMenu/sidebarMenu.jsx";
 import { Button } from "@mui/material";
 
 
 const Sidebar = () => {
     return(
         <div className="sidebar">
-            <TwitterIcon/>
+            <TwitterIcon className="sidebar__twitterIcon"/>
            <SidebarMenu active Icon="fa fa-home" text="Home"/>
            <SidebarMenu Icon="fa fa-user-o" text="Profile"/>
            <SidebarMenu Icon="fa fa-search" text="Explore"/>
