@@ -1,5 +1,6 @@
 import "./feed.css";
 import Tweetbox from "../tweetbox/tweetbox";
+import Tweet from "../tweet/tweet";
 
 const Feed = () => {
     return (       
@@ -13,6 +14,7 @@ const Feed = () => {
             <Tweetbox/>
 
             {/* Tweets */}
+            <Tweet/>
         </div>
      );
 }
