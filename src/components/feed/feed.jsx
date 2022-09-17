@@ -15,6 +15,7 @@ const Feed = () => {
 
             {/* Tweets */}
             <Tweet/>
+            <Tweet/>
         </div>
      );
 }
