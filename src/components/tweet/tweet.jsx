@@ -18,10 +18,10 @@ const Tweet = ({displayName, userName, verified, avatar, text, media}) => {
                         </h3>
                     </div>
                     <div className="tweet__desc">
-                        <p>Hey guys, Today i'll be building a twitter clone with react and firebase</p>
+                        <p>Hey guys, Today i'll be building a twitter clone with react and firebase. lets go!</p>
                     </div>
                 </div>
-                <img src="" alt="" />
+                <img src="https://freerangestock.com/sample/113050/coding-and-programming--software-development-and-it.jpg" alt="" />
                 <div className="tweet__buttons">
                 <ChatBubbleOutline fontSize="small"/>
                 <Repeat fontSize="small"/>
