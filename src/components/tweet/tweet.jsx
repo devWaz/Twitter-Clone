@@ -6,22 +6,22 @@ const Tweet = ({displayName, userName, verified, avatar, text, media}) => {
     return ( 
         <div className="tweet">
             <div className="tweep__avatar">
-                <Avatar src="https://pbs.twimg.com/profile_images/1540875738525622279/XVwo1oHl_400x400.jpg"/>
+                <Avatar src={avatar}/>
             </div>
             <div className="tweet__body">
                 <div className="tweet__header">
                     <div className="tweet__headerText">
                         <h3>
-                            devWaz👾 <div className="tweep__username">
-                            <Verified className="tweep__badge"/> @heyFawaz
+                            {displayName} <div className="tweep__username">
+                            {verified && <Verified className="tweep__badge"/>} @{userName}
                             </div>
                         </h3>
                     </div>
                     <div className="tweet__desc">
-                        <p>Hey guys, Today i'll be building a twitter clone with react and firebase. lets go!</p>
+                        <p>{text}</p>
                     </div>
                 </div>
-                <img src="https://freerangestock.com/sample/113050/coding-and-programming--software-development-and-it.jpg" alt="" />
+                <img src={media} alt="" />
                 <div className="tweet__buttons">
                 <ChatBubbleOutline fontSize="small"/>
                 <Repeat fontSize="small"/>
